@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Z-Index Demo</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        opacity: 0.9;
+      }
+
+      .red {
+        background-color: red;
+        z-index: 1;
+      }
+
+      .green {
+        background-color: green;
+        top: 130px;
+        left: 130px;
+        z-index: 3;
+      }
+
+      .blue {
+        background-color: blue;
+        top: 160px;
+        left: 160px;
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
+  </body>
+</html>

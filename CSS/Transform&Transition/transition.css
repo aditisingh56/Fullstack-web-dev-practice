@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f4f8;
+  text-align: center;
+  padding: 40px;
+}
+
+h1 {
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.box {
+  width: 120px;
+  height: 120px;
+  margin: 20px;
+  line-height: 120px;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  transition: all 0.5s ease;
+  border-radius: 8px;
+}
+
+/* 1. Color transition */
+.color-transition {
+  background-color: #3498db;
+}
+.color-transition:hover {
+  background-color: #e67e22;
+}
+
+/* 2. Shape transition */
+.shape-transition {
+  background-color: #2ecc71;
+}
+.shape-transition:hover {
+  border-radius: 50%;
+}
+
+/* 3. Size transition */
+.size-transition {
+  background-color: #9b59b6;
+}
+.size-transition:hover {
+  transform: scale(1.5);
+}
+
+/* 4. Shadow transition */
+.shadow-transition {
+  background-color: #34495e;
+}
+.shadow-transition:hover {
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* 5. Rotate transition */
+.rotate-transition {
+  background-color: #e74c3c;
+}
+.rotate-transition:hover {
+  transform: rotate(360deg);
+}

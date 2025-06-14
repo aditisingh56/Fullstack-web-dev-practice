@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Website with Loader</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body,
+      html {
+        height: 100%;
+        font-family: sans-serif;
+      }
+
+      /* yeh white page hai which will hide content for 2s iss 2s me spinner dikhai dega */
+      #loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #f9f9f9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      }
+
+      /* yeh spinner hai */
+      .spinner {
+        width: 80px;
+        height: 80px;
+        border: 8px solid #ccc;
+        border-top: 8px solid #3498db;
+        border-radius: 50%;
+        animation: spin 2s linear forwards; /* yeh final state rakhega */
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      /* yeh hidden rahega 2s ke liye */
+      #content {
+        display: none;
+        padding: 50px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- yeh loader hai -->
+    <div id="loader">
+      <div class="spinner"></div>
+    </div>
+
+    <!-- yaha main content hai -->
+    <div id="content">
+      <h1>🌟 Welcome to My Website!</h1>
+      <p>This is the main content that appears after loading completes.</p>
+    </div>
+
+    <script>
+      // humne loader ko 2 seconds ke liye dikhana hai
+      setTimeout(function () {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("content").style.display = "block";
+      }, 2000); // yaha 2 seconds ka wait hai
+    </script>
+  </body>
+</html>

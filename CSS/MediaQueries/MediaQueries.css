@@ -1,0 +1,11 @@
+div {
+  width: 500px;
+  height: 500px;
+  background-color: brown;
+}
+
+@media (min-width: 400px) {
+  div {
+    background-color: antiquewhite;
+  }
+}

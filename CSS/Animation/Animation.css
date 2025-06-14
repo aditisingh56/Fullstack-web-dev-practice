@@ -1,0 +1,90 @@
+.container {
+  width: 500px;
+  height: 200px;
+  background-color: darkblue;
+  margin: auto;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.box {
+  background-color: lightcoral;
+  height: 100px;
+  width: 100px;
+  padding: 30px 10px 10px 10px;
+  border: solid 3px black;
+  margin: auto;
+  display: flex;
+}
+h1 {
+  text-align: center;
+}
+@keyframes fontchange {
+  from {
+    font-size: 20px;
+  }
+  to {
+    font-size: 50px;
+  }
+}
+.box:hover {
+  animation-name: fontchange;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes colourchange {
+  from {
+    background-color: lightgreen;
+  }
+  to {
+    background-color: palevioletred;
+  }
+}
+.box2 {
+  background-color: lightgreen;
+  height: 100px;
+  width: 100px;
+
+  border: solid 3px black;
+  padding: 30px 10px 10px 10px;
+  margin: auto;
+  display: flex;
+}
+.box2:hover {
+  animation-name: colourchange;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes widthchange {
+  from {
+    width: 100px;
+  }
+  to {
+    width: 200px;
+  }
+}
+.box3 {
+  background-color: goldenrod;
+  height: 100px;
+  width: 100px;
+
+  border: solid 3px black;
+  padding: 30px 10px 10px 10px;
+  margin: auto;
+  display: flex;
+}
+
+.box3:hover {
+  animation-name: widthchange;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
