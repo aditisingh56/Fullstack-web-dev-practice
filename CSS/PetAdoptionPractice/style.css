@@ -1,31 +1,115 @@
-.card {
-  width: 400px;
-  border: 2px solid black;
-  border-radius: 25px;
-  padding: 10px;
-  margin: 10px;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fdfaf6;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+  line-height: 1.6;
 }
 
-img {
-  width: 400px;
-  height: 200px;
-  border-radius: 25px;
+h1 {
+  font-size: 2.5em;
+  color: #4a7c59;
+  text-align: center;
+  background-color: #f6b649;
 }
 
 h2 {
-  color: #d56f3e;
+  font-size: 2em;
+  color: #5b4b8a;
+  margin-top: 20px;
 }
 
-span {
-  color: #9d6f24;
+h3 {
+  color: #4a7c59;
 }
 
-h4 {
-  text-align: right;
-  color: #3c787e;
+a {
+  text-decoration: none;
+  color: #ff6b6b;
 }
 
 #pets {
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  width: 300px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.video-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+video {
+  width: 90%;
+  max-width: 600px;
+  margin: 15px 0;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+}
+.audio-section {
+  margin-top: 50px;
+  background-color: #f6b649;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.audio-section h2 {
+  text-align: center;
+  color: #d57a66;
+}
+
+.audio-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.audio-card {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  border: 2px solid #ddd;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.03);
+  margin: 0 50px;
+}
+
+.audio-card p {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #4a7c59;
+}
+audio {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+  border: 2px solid #ccc;
 }

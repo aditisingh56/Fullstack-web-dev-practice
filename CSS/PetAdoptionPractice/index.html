@@ -5,44 +5,128 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS</title>
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h2><i>adoptme.com</i></h2>
-    <h1>Adopt a <span>Pet</span> Today</h1>
+    <h1>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="40px"
+        viewBox="0 -960 960 960"
+        width="40px"
+        fill="#e3e3e3black"
+      >
+        <path
+          d="m360-592-85-85q-17-17-26-38.67-9-21.66-9-45.33 0-50 34.33-84.5Q308.67-880 358-880h244q49 0 82.5 35t33.5 84q0 24-9.5 46.5T682-675l-82 82v222l84 84q17 17 26 39t9 46q0 51-34.83 86-34.84 35-85.38 35Q575-81 553-90t-39-26q-7-7-15.5-10.5T480-130q-10 0-18.5 3.5T446-116q-17 17-39 26t-46 9q-51 0-86.5-35T239-202q0-24 9.5-46t26.5-39l85-83v-222Zm66.67-17v256q0 5.22-2.5 10.11t-5.5 8.56l-96 95q-7.34 7-11.67 17.12-4.33 10.13-4.33 20.93 0 22.95 15.66 38.78 15.67 15.83 38.62 15.83 10.8 0 20.93-4.33 10.12-4.33 17.45-11.67 16-16 37-24.66 21-8.67 43.67-8.67t43.83 8.67q21.17 8.66 36.84 24.66 7.33 7 17.45 11.5 10.13 4.5 20.93 4.5 22.95 0 38.78-15.83 15.84-15.83 15.84-38.78 0-10.8-4.34-20.93-4.33-10.12-12-17.12l-96-95q-3.33-4-5.66-8.67-2.34-4.67-2.34-10v-256q0-5.22 1.67-10.11t5.33-8.56l95-96q7.34-7.33 11.84-17.39 4.5-10.07 4.5-20.8 0-21.47-14.67-36.47t-36-15H358q-21.89 0-36.95 15.16Q306-783 306-761.11q0 10.95 4.33 20.53 4.34 9.58 11.34 16.91l97 96q4 3.34 6 8.34t2 10.33Zm53.66 129Z"
+        />
+      </svg>
+      Adopt a
+      <span
+        ><a href="https://en.wikipedia.org/wiki/Pet" target="_blank"
+          >Pet</a
+        ></span
+      >
+      Today
+    </h1>
     <br /><br />
+
     <div id="pets">
       <div class="card">
-        <img src="dog.jpg" alt="jerry" />
+        <a href="https://thepetnest.com/adopt-a-pet" target="_blank">
+          <img src="dog.jpg" alt="jerry" />
+        </a>
         <h3>Meet Jerry</h3>
-        <p>
-          Jerry is a charming and friendly dog with a heart of gold, and he is
-          looking for a loving home to call his own. He is a medium-sized mixed
-          breed with soft, fluffy fur and soulful brown eyes that will melt your
-          heart. If you are looking for a loyal and loving companion who will
-          bring endless joy into your life, Jerry may be the perfect pet for
-          you. Adopting Jerry means giving him a second chance at a happy life,
-          and you will be rewarded with the unconditional love and companionship
-          that only a dog can provide. So don't hesitate to bring this wonderful
-          pup home today!
-        </p>
+        <p>Jerry is a charming and friendly dog with a heart of gold...</p>
       </div>
+
       <div class="card">
-        <img src="cat.jpg" alt="tom" />
+        <a href="https://www.mrnmrspet.com/cat-for-adoption-in-hyderabad" target="_blank">
+          <img src="cat.jpg" alt="tom" />
+        </a>
         <h3>Meet Tom</h3>
         <p>
           Tom is a handsome and affectionate cat who is looking for his forever
-          home. He is a medium-sized domestic shorthair with sleek black and
-          white fur and striking green eyes that will capture your heart. If you
-          are looking for a loyal and loving companion who will provide you with
-          endless joy and entertainment, Tom may be the perfect pet for you.
-          Adopting Tom means giving him a second chance at a happy life, and you
-          will be rewarded with the unconditional love and companionship that
-          only a cat can provide mhn mmmm . So why not bring this wonderful
-          feline into your life today?
+          home...
+        </p>
+      </div>
+
+      <div class="card">
+        <a href="https://nandankanan.org/adoption/animal.php?cat=1" target="_blank">
+          <img src="parrot.jpg" alt="polly" />
+        </a>
+        <h3>Meet Polly</h3>
+        <p>
+          Polly is a vibrant and intelligent parrot who is looking for her
+          forever home...
         </p>
       </div>
     </div>
-    <h4>a gift of new life</h4>
+
+    <br />
+
+    <div class="video-section">
+      <h2>🐾 Our Pets in Action</h2>
+
+      <video controls>
+        <source src="parrotvideo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <video controls>
+        <source src="catvideo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <video controls>
+        <source src="dogvideo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <br />
+
+    <div class="audio-section">
+  <h2>🎧 Pet Sounds</h2>
+  <ol>
+    <li>Listen to Jerry's bark</li>
+    <li>Listen to Tom's meow</li>
+    <li>Listen to Polly's chatter</li>
+  </ol>
+
+  <div class="audio-cards">
+    <div class="audio-card">
+      <p>🐶 Jerry's Voice</p>
+      <audio controls>
+        <source src="dogaudi.mp3" type="audio/mp3" />
+        Your browser does not support the audio tag.
+      </audio>
+    </div>
+
+    <div class="audio-card">
+      <p>🐱 Tom's Voice</p>
+      <audio controls>
+        <source src="cute-cat-352656.mp3" type="audio/mp3" />
+        Your browser does not support the audio tag.
+      </audio>
+    </div>
+
+    <div class="audio-card">
+      <p>🦜 Polly's Voice</p>
+      <audio controls>
+        <source src="parrot-80775.mp3" type="audio/mp3" />
+        Your browser does not support the audio tag.
+      </audio>
+    </div>
+  </div>
+</div>
+
+    <br />
+
+    <footer>
+      <p>© 2023 Adopt Me. All rights reserved.</p>
+      
+
   </body>
 </html>
