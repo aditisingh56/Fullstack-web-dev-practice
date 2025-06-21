@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Punjab Tourist Attractions</title>
+
+    <link rel="stylesheet" href="../Styling/attraction.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="attraction.html" class="active">Attractions</a>
+      <input
+        type="text"
+        id="search"
+        placeholder="Search Punjab..."
+        aria-label="Search"
+      />
+    </nav>
+
+    <section class="attraction-hero">
+      <div class="hero-text">
+        <h1>Explore Punjab’s Beauty</h1>
+        <p>From majestic temples to vibrant cultural landmarks</p>
+        <a href="#places" class="hero-btn">Discover Now</a>
+      </div>
+    </section>
+
+    <section class="explore-categories">
+      <h2><i class="fas fa-compass"></i> Explore by Category</h2>
+      <div class="category-grid">
+        <a href="#temples" class="category-card">
+          <i class="fas fa-place-of-worship"></i>
+          <h3>Temples</h3>
+        </a>
+        <a href="#forts" class="category-card">
+          <i class="fas fa-fort-awesome-alt"></i>
+          <h3>Forts</h3>
+        </a>
+        <a href="#museums" class="category-card">
+          <i class="fas fa-landmark"></i>
+          <h3>Museums</h3>
+        </a>
+        <a href="#gardens" class="category-card">
+          <i class="fas fa-tree"></i>
+          <h3>Gardens</h3>
+        </a>
+        <a href="#borders" class="category-card">
+          <i class="fas fa-flag"></i>
+          <h3>Borders</h3>
+        </a>
+      </div>
+    </section>
+
+    <section class="attractions-intro" id="places">
+      <h2><i class="fas fa-map-marker-alt"></i> Top Tourist Attractions</h2>
+      <p>
+        Punjab is a land of spiritual depth, cultural diversity, and natural
+        beauty. Below are some must-visit destinations.
+      </p>
+
+      <div class="attractions-grid">
+        <div class="attraction-card" id="temples">
+          <a href="https://en.wikipedia.org/wiki/Golden_Temple" target="_blank">
+            <img src="../Photos/golden temple.avif" alt="Golden Temple" />
+          </a>
+          <h3>Golden Temple, Amritsar</h3>
+          <p>
+            A spiritual and architectural wonder, glowing in serenity and gold.
+          </p>
+          <a
+            href="https://en.wikipedia.org/wiki/Golden_Temple"
+            class="read-more"
+            >Learn More</a
+          >
+        </div>
+
+        <div class="attraction-card" id="forts">
+          <a href="https://en.wikipedia.org/wiki/Qila_Mubarak" target="_blank">
+            <img src="../Photos/quila.avif" alt="Qila Mubarak" />
+          </a>
+          <h3>Qila Mubarak, Bathinda</h3>
+          <p>One of India’s oldest forts and the prison of Razia Sultan.</p>
+          <a href="https://en.wikipedia.org/wiki/Qila_Mubarak" class="read-more"
+            >Learn More</a
+          >
+        </div>
+
+        <div class="attraction-card" id="gardens">
+          <a
+            href="https://en.wikipedia.org/wiki/Rock_Garden_of_Chandigarh"
+            target="_blank"
+          >
+            <img src="../Photos/rock garden.avif" alt="Rock Garden" />
+          </a>
+          <h3>Rock Garden, Chandigarh</h3>
+          <p>A creative garden of sculptures made from waste by Nek Chand.</p>
+          <a
+            href="https://en.wikipedia.org/wiki/Rock_Garden_of_Chandigarh"
+            class="read-more"
+            >Know More</a
+          >
+        </div>
+
+        <div class="attraction-card" id="museums">
+          <a
+            href="https://en.wikipedia.org/wiki/Virasat-e-Khalsa"
+            target="_blank"
+          >
+            <img src="../Photos/virasat.avif" alt="Virasat-e-Khalsa" />
+          </a>
+          <h3>Virasat-e-Khalsa</h3>
+          <p>An iconic museum celebrating Sikh heritage in Anandpur Sahib.</p>
+          <a
+            href="https://en.wikipedia.org/wiki/Virasat-e-Khalsa"
+            class="read-more"
+            >Visit Site</a
+          >
+        </div>
+
+        <div class="attraction-card" id="borders">
+          <a
+            href="https://amritsar.nic.in/tourist-place/wagah-border/"
+            target="_blank"
+          >
+            <img src="../Photos/wagah border.avif" alt="Wagah Border" />
+          </a>
+          <h3>Wagah Border</h3>
+          <p>Watch the dramatic Indo-Pak retreat ceremony every evening.</p>
+          <a
+            href="https://amritsar.nic.in/tourist-place/wagah-border/"
+            class="read-more"
+            >View More</a
+          >
+        </div>
+
+        <div class="attraction-card">
+          <a
+            href="https://en.wikipedia.org/wiki/Jallianwala_Bagh"
+            target="_blank"
+          >
+            <img src="../Photos/jalianbhagh.avif" alt="Jallianwala Bagh" />
+          </a>
+          <h3>Jallianwala Bagh</h3>
+          <p>Historic garden commemorating the 1919 massacre.</p>
+          <a
+            href="https://en.wikipedia.org/wiki/Jallianwala_Bagh"
+            class="read-more"
+            >Learn More</a
+          >
+        </div>
+
+        <div class="attraction-card">
+          <a
+            href="https://traveltriangle.com/blog/sheesh-mahal-in-patiala/"
+            target="_blank"
+          >
+            <img src="../Photos/sheeshmahal.jpg" alt="Sheesh Mahal" />
+          </a>
+          <h3>Sheesh Mahal, Patiala</h3>
+          <p>
+            A palace of mirrors built by Maharaja Narinder Singh, now a museum.
+          </p>
+          <a
+            href="https://traveltriangle.com/blog/sheesh-mahal-in-patiala/"
+            class="read-more"
+            >See More</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="visitor-feedback">
+      <h2><i class="fas fa-comments"></i> Visitor Testimonials</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial">
+          <p>
+            "The Golden Temple is mesmerizing at night. A peaceful experience!"
+          </p>
+          <span>– Aditi, Mumbai</span>
+        </div>
+        <div class="testimonial">
+          <p>
+            "Loved the energy at the Wagah border! Goosebumps during the
+            parade."
+          </p>
+          <span>– Arjun, Delhi</span>
+        </div>
+        <div class="testimonial">
+          <p>"Every fort tells a story — Punjab is full of vibrant history."</p>
+          <span>– Meera, Bangalore</span>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p>&copy; 2025 Punjab Tourism | Designed with ❤️</p>
+      <p>
+        Follow us:
+        <a href="#"><i class="fab fa-instagram"></i></a> |
+        <a href="#"><i class="fab fa-facebook"></i></a> |
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </p>
+    </footer>
+
+    <script src="../Scripts/search.js"></script>
+  </body>
+</html>

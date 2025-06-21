@@ -1,0 +1,403 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.7;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.navbar {
+  background-color: #800000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar input[type="text"] {
+  padding: 8px;
+  font-size: 16px;
+  margin-left: 20px;
+  border-radius: 6px;
+  border: none;
+  width: 250px;
+  height: 25px;
+}
+#search {
+  position: absolute;
+  left: 1100px;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.navbar a.active,
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.navbar input[type="text"] {
+  padding: 8px;
+  margin-left: 20px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  width: 250px;
+  background-color: #fff;
+}
+
+.mainp_hoto,
+.attraction-hero {
+  height: 100vh;
+  background-image: url("../Photos/survana.avif");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.mainp_hoto .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.hero-text {
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-text h1 {
+  font-size: 64px;
+  font-weight: bold;
+  transition: font-size 0.3s ease;
+}
+
+.hero-text h1:hover {
+  font-size: 80px;
+}
+
+.hero-text p {
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+.hero-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #ffcc00;
+  color: #333;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.hero-btn:hover {
+  background-color: #e6b800;
+}
+
+.attractions-header {
+  text-align: center;
+  padding: 50px 20px 30px;
+  background-color: #f5f5f5;
+}
+
+.attractions-header h1 {
+  font-size: 40px;
+  color: #800000;
+  margin-bottom: 10px;
+}
+
+.attractions-header p {
+  font-size: 18px;
+  color: #555;
+}
+
+.attractions-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.attraction-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 300px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.attraction-card:hover {
+  transform: scale(1.03);
+}
+
+.attraction-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.attraction-card h2,
+.attraction-card h3 {
+  font-size: 20px;
+  color: #800000;
+  margin: 15px 0 10px;
+}
+
+.attraction-card p {
+  font-size: 15px;
+  color: #444;
+  margin: 0 15px 20px;
+}
+
+#photos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+#photos div {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+#photos div:hover {
+  transform: scale(1.05);
+}
+
+#photos img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+#photos h3 {
+  margin-top: 10px;
+  color: #800000;
+}
+
+.section2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  padding: 0 40px;
+}
+
+.section2_content h2 {
+  font-size: 36px;
+  color: #800000;
+  margin-bottom: 20px;
+}
+
+.section2_contentdusra {
+  width: 65%;
+  font-size: 18px;
+}
+
+.culture-section {
+  padding: 50px 40px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.culture-section h2 {
+  color: #800000;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.culture-section p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+.culture-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.culture-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  width: 300px;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.culture-card:hover {
+  transform: translateY(-5px);
+}
+
+.culture-card video {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.culture-card h3 {
+  color: #800000;
+  font-size: 20px;
+  margin: 12px 0 6px;
+}
+
+.culture-card p {
+  font-size: 15px;
+  color: #444;
+  padding: 0 15px 15px;
+}
+
+.about-banner {
+  background-image: url("../Photos/punjab.avif");
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.about-banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.banner-text {
+  position: relative;
+  z-index: 1;
+}
+
+.banner-text h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.banner-text p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.about-main {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.about-main h2 {
+  color: #800000;
+  font-size: 26px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.about-main p {
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.site-footer {
+  background-color: #800000;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 14px;
+}
+
+.site-footer a {
+  color: #ffd700;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+.search-form {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  position: relative;
+}
+
+.search-form input[type="text"] {
+  padding: 7px 12px;
+  border-radius: 6px;
+  border: 2px solid #ccc;
+  width: 230px;
+  font-size: 15px;
+  background: #fff;
+}
+
+.search-form button {
+  background: #ffcc00;
+  border: none;
+  padding: 8px 10px;
+  margin-left: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #333;
+}
+
+.search-form button:hover {
+  background-color: #e6b800;
+}
+.banner-text h1:hover {
+  font-size: 60px;
+  transition: all 0.3s;
+}
