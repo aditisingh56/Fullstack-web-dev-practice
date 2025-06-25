@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: "Poppins", sans-serif;
@@ -129,6 +132,11 @@ body {
   font-size: 40px;
   color: #800000;
   margin-bottom: 10px;
+}
+
+#explore-section {
+  padding-top: 100px;
+  margin-top: -100px;
 }
 
 .attractions-header p {
