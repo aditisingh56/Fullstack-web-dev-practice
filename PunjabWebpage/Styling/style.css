@@ -75,6 +75,9 @@ body {
   text-align: center;
 }
 
+.mainp_hoto {
+  background-color: #fbddba;
+}
 .mainp_hoto .overlay {
   position: absolute;
   top: 0;
@@ -408,4 +411,238 @@ body {
 .banner-text h1:hover {
   font-size: 60px;
   transition: all 0.3s;
+}
+
+.festivals-section {
+  padding: 60px 20px;
+  background-color: #ede7e1;
+  text-align: center;
+}
+.festivals-section a {
+  text-decoration: none;
+}
+
+.festivals-section h2 {
+  color: #800000;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.festivals-section p {
+  font-size: 18px;
+  max-width: 750px;
+  margin: 0 auto 40px;
+  color: #555;
+}
+
+.festival-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.festival-card {
+  background-color: white;
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.festival-card:hover {
+  transform: translateY(-6px);
+}
+
+.festival-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.festival-card h3 {
+  color: #800000;
+  font-size: 20px;
+  margin: 12px 0 6px;
+}
+
+.festival-card p {
+  padding: 0 15px 20px;
+  font-size: 15px;
+  color: #444;
+}
+.personalities-section {
+  padding: 60px 20px;
+  background-color: #f5faff;
+  text-align: center;
+}
+
+.personalities-section h2 {
+  color: #800000;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.personalities-section p {
+  font-size: 18px;
+  max-width: 750px;
+  margin: 0 auto 40px;
+  color: #555;
+}
+
+.personality-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.personality-card {
+  background-color: white;
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.personality-card:hover {
+  transform: translateY(-6px);
+}
+
+.personality-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.personality-card h3 {
+  font-size: 20px;
+  color: #800000;
+  margin: 10px 0 6px;
+}
+
+.personality-card p {
+  font-size: 15px;
+  color: #444;
+  padding: 0 15px 20px;
+}
+.personalities-section a {
+  text-decoration: none;
+}
+#chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-family: "Poppins", sans-serif;
+  z-index: 9999;
+}
+
+#chat-toggle {
+  background-color: #800000;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  padding: 12px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#chat-box {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  bottom: 60px;
+  right: 0;
+  width: 300px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+#chat-box.show {
+  display: flex;
+}
+
+#chat-log {
+  height: 250px;
+  overflow-y: auto;
+  padding: 10px;
+  font-size: 14px;
+}
+
+#user-input {
+  border: none;
+  border-top: 1px solid #ccc;
+  padding: 10px;
+  flex: 1;
+}
+
+#send-btn {
+  background-color: #ffcc00;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none !important;
+}
+@media (max-width: 480px) {
+  #chat-box {
+    width: 90vw;
+    right: 5vw;
+    bottom: 70px;
+  }
+  #user-input,
+  #send-btn {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+#chat-box {
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+#chat-box.show {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+.festivals-section,
+.personalities-section {
+  padding: 60px 20px;
+  background-color: #fff8f0;
+  border-top: 1px solid #f0e6de;
+}
+@media (max-width: 768px) {
+  .festival-grid,
+  .personality-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#chat-toggle:hover {
+  background-color: #a00000;
+  transform: scale(1.1);
+}
+.personalities-section {
+  background-color: white;
+}
+.section2 {
+  background-color: #fff8f0;
+}
+.mainp_hoto {
+  background-color: #fff8f0;
+}
+#photos {
+  background-color: #fff8f0;
 }

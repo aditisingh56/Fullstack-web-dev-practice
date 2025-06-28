@@ -10,12 +10,12 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <nav class="navbar">
       <a href="index.html" class="active">Home</a>
       <a href="HtmlFiles/about.html">About</a>
       <a href="HtmlFiles/attraction.html">Attractions</a>
-
       <input
         type="text"
         id="search"
@@ -47,27 +47,26 @@
         </p>
       </div>
     </section>
-
     <main>
       <div id="photos">
         <div class="photo1">
-          <img src="Photos/satlaj.avif" alt="Satluj River" width="100%" />
+          <img src="Photos/satlaj.avif" alt="Satluj River" />
           <h3>Satluj River</h3>
         </div>
         <div class="photo2">
-          <img src="Photos/beas.avif" alt="Beas River" width="100%" />
+          <img src="Photos/beas.avif" alt="Beas River" />
           <h3>Beas River</h3>
         </div>
         <div class="photo3">
-          <img src="Photos/ravi.avif" alt="Ravi River" width="100%" />
+          <img src="Photos/ravi.avif" alt="Ravi River" />
           <h3>Ravi River</h3>
         </div>
         <div class="photo4">
-          <img src="Photos/chenab.avif" alt="Chenab River" width="100%" />
+          <img src="Photos/chenab.avif" alt="Chenab River" />
           <h3>Chenab River</h3>
         </div>
         <div class="photo5">
-          <img src="Photos/jhelum.avif" alt="Jhelum River" width="100%" />
+          <img src="Photos/jhelum.avif" alt="Jhelum River" />
           <h3>Jhelum River</h3>
         </div>
       </div>
@@ -97,7 +96,6 @@
         <div class="culture-card">
           <video muted loop poster="Photos/gidha.jpeg">
             <source src="videos/lohrivedio.mp4" type="video/mp4" />
-            Your browser does not support video.
           </video>
           <h3>Giddha Dance</h3>
           <p>
@@ -109,7 +107,6 @@
         <div class="culture-card">
           <video muted loop poster="Photos/cuisine.png">
             <source src="Videos/punjabi-food.mp4" type="video/mp4" />
-            Your browser does not support video.
           </video>
           <h3>Punjabi Cuisine</h3>
           <p>
@@ -120,14 +117,95 @@
 
         <div class="culture-card">
           <video muted loop poster="Photos/lohri.jpg">
-            <source src="videos/lohrivedio.mp4 type="video/mp4" /> Your browser
-            does not support video.
+            <source src="videos/lohrivedio.mp4" type="video/mp4" />
           </video>
           <h3>Lohri Festival</h3>
           <p>
             Lohri is celebrated in winter to mark the harvest season with
             bonfires, sweets, and dancing.
           </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="festivals-section">
+      <h2>Festivals of Punjab</h2>
+      <p>
+        Punjab is famous for its vibrant festivals that reflect its rich
+        heritage, religious diversity, and joyful spirit.
+      </p>
+
+      <div class="festival-grid">
+        <div class="festival-card">
+          <a href="https://en.wikipedia.org/wiki/Vaisakhi" target="_blank">
+            <img src="Photos/baisakhi.jpeg" alt="Baisakhi Festival" />
+            <h3>Baisakhi</h3>
+            <p>The harvest festival and the founding day of Khalsa Panth.</p>
+          </a>
+        </div>
+
+        <div class="festival-card">
+          <a
+            href="https://en.wikipedia.org/wiki/Guru_Nanak_Gurpurab"
+            target="_blank"
+          >
+            <img src="Photos/gurunannak.jpeg" alt="Guru Nanak Jayanti" />
+            <h3>Guru Nanak Jayanti</h3>
+            <p>
+              Celebrates the birth of Guru Nanak Dev Ji with processions and
+              kirtans.
+            </p>
+          </a>
+        </div>
+
+        <div class="festival-card">
+          <a href="https://en.wikipedia.org/wiki/Hola_Mohalla" target="_blank">
+            <img src="Photos/holamohola.jpg" alt="Hola Mohalla" />
+            <h3>Hola Mohalla</h3>
+            <p>
+              A Sikh warrior festival with martial arts and devotional music.
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="personalities-section">
+      <h2>Famous Personalities from Punjab</h2>
+      <p>
+        Punjab has given India inspirational leaders, artists, and sports
+        legends.
+      </p>
+
+      <div class="personality-grid">
+        <div class="personality-card">
+          <a href="https://en.wikipedia.org/wiki/Bhagat_Singh" target="_blank">
+            <img src="Photos/bhagat_singh.png" alt="Bhagat Singh" />
+            <h3>Shaheed Bhagat Singh</h3>
+            <p>
+              A revolutionary freedom fighter whose courage still inspires
+              generations.
+            </p>
+          </a>
+        </div>
+
+        <div class="personality-card">
+          <a href="https://en.wikipedia.org/wiki/Milkha_Singh" target="__blank">
+            <img src="Photos/milka_singh.png" alt="Milkha Singh" />
+            <h3>Milkha Singh</h3>
+            <p>Known as The Flying Sikh, one of India’s greatest athletes.</p>
+          </a>
+        </div>
+
+        <div class="personality-card">
+          <a href="https://en.wikipedia.org/wiki/Gurdas_Maan" target="_blank">
+            <img src="Photos/newgurdas.webp" alt="Gurdas Maan" />
+            <h3>Gurdas Maan</h3>
+            <p>
+              A legendary Punjabi singer and songwriter known for cultural
+              pride.
+            </p>
+          </a>
         </div>
       </div>
     </section>
@@ -140,7 +218,15 @@
       </p>
     </footer>
 
+    <div id="chatbot-container">
+      <button id="chat-toggle">💬</button>
+      <div id="chat-box" class="hidden">
+        <div id="chat-log"></div>
+        <input type="text" id="user-input" placeholder="Ask about Punjab..." />
+        <button id="send-btn">Send</button>
+      </div>
+    </div>
     <script src="Scripts/search.js"></script>
-    <script src="Scripts/culture.js"></script>
+    <script src="Scripts/chatbot.js"></script>
   </body>
 </html>
