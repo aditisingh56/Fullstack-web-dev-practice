@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const chatLog = document.getElementById("chat-log");
 
   toggle.onclick = () => {
-    chatBox.classList.toggle("hidden");
+    chatBox.classList.toggle("show");
   };
 
   sendBtn.onclick = () => {

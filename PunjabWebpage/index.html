@@ -220,12 +220,16 @@
 
     <div id="chatbot-container">
       <button id="chat-toggle">💬</button>
-      <div id="chat-box" class="hidden">
+
+      <div id="chat-box">
         <div id="chat-log"></div>
-        <input type="text" id="user-input" placeholder="Ask about Punjab..." />
-        <button id="send-btn">Send</button>
+        <div style="display: flex">
+          <input type="text" id="user-input" placeholder="Ask me anything..." />
+          <button id="send-btn">Send</button>
+        </div>
       </div>
     </div>
+
     <script src="Scripts/search.js"></script>
     <script src="Scripts/chatbot.js"></script>
   </body>
